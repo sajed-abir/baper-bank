@@ -18,15 +18,52 @@
       <section class="grid grid-cols-3 gap-5 w-9/12 text-white mx-auto mt-12">
         <div class="bg-emerald-200 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Diposit</h3>
-          <h2 class="text-4xl font-bold">$00</h2>
+          <h2 id="diposit-total" class="text-4xl font-bold">$00</h2>
         </div>
         <div class="bg-red-300 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Withdraw</h3>
-          <h2 class="text-4xl font-bold">$00</h2>
+          <h2 id="withdraw-total" class="text-4xl font-bold">$00</h2>
         </div>
         <div class="bg-emerald-900 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Account</h3>
           <h2 class="text-4xl font-bold">$3000</h2>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-5 w-9/12 text-white mx-auto mt-12">
+        <div class="bg-yellow-200 p-5 rounded-md">
+          <h3 class="text-2xl font-semibold pb-3">Please Diposit</h3>
+
+          <input
+            class="block w-9/12 px-4 mb-3"
+            type="text"
+            name=""
+            id="diposite-field"
+            placeholder="Enter the amount you want to deposite"
+          />
+          <button
+            id="btn-diposit"
+            class="bg-blue-600 hover:bg-blue-400 px-4 py-2 rounded-md text-white"
+          >
+            Diposit
+          </button>
+        </div>
+        <div class="bg-rose-600 p-5 rounded-md">
+          <h3 class="text-2xl font-semibold pb-3">Please Withdraw</h3>
+
+          <input
+            class="block w-9/12 px-4 mb-3"
+            type="text"
+            name=""
+            id="withdraw-field"
+            placeholder="enter the amount you want to withdraw"
+          />
+          <button
+            id="btn-withdaw"
+            class="bg-blue-600 hover:bg-blue-400 px-4 py-2 rounded-md text-white"
+          >
+            Withdraw
+          </button>
         </div>
       </section>
     </main>
