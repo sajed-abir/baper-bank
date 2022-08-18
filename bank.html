@@ -18,27 +18,33 @@
       <section class="grid grid-cols-3 gap-5 w-9/12 text-white mx-auto mt-12">
         <div class="bg-emerald-200 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Diposit</h3>
-          <h2 id="diposit-total" class="text-4xl font-bold">$00</h2>
+          <h2 class="text-4xl font-bold">
+            $ <span id="diposit-total">00</span>
+          </h2>
         </div>
         <div class="bg-red-300 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Withdraw</h3>
-          <h2 id="withdraw-total" class="text-4xl font-bold">$00</h2>
+          <h2 class="text-4xl font-bold">
+            $ <span id="withdraw-total">00</span>
+          </h2>
         </div>
         <div class="bg-emerald-900 p-5 rounded-md">
           <h3 class="text-2xl font-semibold pb-3">Account</h3>
-          <h2 class="text-4xl font-bold">$3000</h2>
+          <h2 class="text-4xl font-bold">
+            $ <span id="account-total">3000</span>
+          </h2>
         </div>
       </section>
 
-      <section class="grid grid-cols-2 gap-5 w-9/12 text-white mx-auto mt-12">
+      <section class="grid grid-cols-2 gap-5 w-9/12 mx-auto mt-12">
         <div class="bg-yellow-200 p-5 rounded-md">
-          <h3 class="text-2xl font-semibold pb-3">Please Diposit</h3>
+          <h3 class="text-2xl font-semibold pb-3 text-white">Please Diposit</h3>
 
           <input
             class="block w-9/12 px-4 mb-3"
             type="text"
             name=""
-            id="diposite-field"
+            id="diposit-field"
             placeholder="Enter the amount you want to deposite"
           />
           <button
@@ -48,8 +54,11 @@
             Diposit
           </button>
         </div>
+
         <div class="bg-rose-600 p-5 rounded-md">
-          <h3 class="text-2xl font-semibold pb-3">Please Withdraw</h3>
+          <h3 class="text-2xl font-semibold pb-3 text-white">
+            Please Withdraw
+          </h3>
 
           <input
             class="block w-9/12 px-4 mb-3"
@@ -68,6 +77,7 @@
       </section>
     </main>
 
-    <script src="js/login.js"></script>
+    <script src="js/diposit.js"></script>
+    <script src="js/withdraw.js"></script>
   </body>
 </html>
